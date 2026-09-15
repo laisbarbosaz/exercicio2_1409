@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2: Exercício: Seleção de Gênero Musical Preferido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Escolha seu Gênero Musical Preferido!</h1>
+<hr class = "linha">
+<div class = "container">
+    <p>Selecione uma opção de 1 a 6 para ver seu gênero musical favorito.</p>
+<script>
+let OpcaoEstilo = prompt(
+
+    "Qual seu Gênero Musical Preferido? \n" + 
+    "1 - Ação \n" +
+    "2 - Comédia \n" +
+    "3 - Drama \n" +
+    "4 - Terror \n" +
+    "5 - Ficção Científica \n" +
+    "6 - Romance \n"
+);
+
+OpcaoEstilo = Number(OpcaoEstilo);
+
+let FilmeEstilo;
+
+switch (OpcaoEstilo) {
+  case 1:
+    FilmeEstilo = "Ação";
+    break;
+  case 2:
+    FilmeEstilo = "Comédia";
+    break;
+  case 3:
+    FilmeEstilo = "Drama";
+    break;
+  case 4:
+    FilmeEstilo = "Terror";
+    break;
+  case 5:
+    FilmeEstilo = "Ficção Científica";
+    break;
+  case 6:
+    FilmeEstilo = "Romance";
+    break;
+  default:
+    FilmeEstilo = null;
+}
+
+if (FilmeEstilo === null) {
+    document.write("<h2>Selecione uma Opção!</h2>");
+} else {
+    document.write("<h2>Seu gênero musical favorito é: " + FilmeEstilo + "</h2>");
+}
+</script>
+</div>
+</body>
+</html>

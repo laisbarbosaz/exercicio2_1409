@@ -1,0 +1,25 @@
+h1 {
+    color: #360505;
+    font-size: 24px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #360505;
+    font-size: 24px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.linha {
+    border: 1px solid #360505;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
